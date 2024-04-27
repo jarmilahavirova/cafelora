@@ -9,14 +9,19 @@ export const Drink = ({ id, name, ordered, image, layers }) => (
       </div>
       <div className="drink__info">
         <h3>{name}</h3>
-        {layers.map((layer) => (
-          <Layer color={layer.color} label={layer.label} />
+        {layers.map((layer, index) => (
+          <Layer key={index} color={layer.color} label={layer.label} />
         ))}
       </div>
     </div>
-    <form className="drink__controls">
+    <form className="drink__controls" data-id={id}>
       <input type="hidden" className="order-id" value="0" />
-      <button className="order-btn">Objednat</button>
+      <button
+        className={ordered ? "order-btn order-btn--ordered" : "order-btn"}
+        data-id={id}
+      >
+        {ordered ? "Zrušit" : "Objednat"}
+      </button>
     </form>
   </div>
 );

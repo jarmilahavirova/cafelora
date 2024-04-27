@@ -14,7 +14,7 @@ const drinks = json.data;
 
 document.querySelector("#root").innerHTML = render(
   <div className="page">
-    <Header />
+    <Header showMenu={true} />
     <main>
       <Banner />
       <Menu drinks={drinks} />
@@ -31,4 +31,20 @@ document.querySelector(".nav-btn").addEventListener("click", () => {
 
 document.querySelector(".rollout-nav").addEventListener("click", () => {
   document.querySelector(".rollout-nav").classList.add("nav-closed");
+});
+
+document.querySelectorAll(".drink__controls").forEach((button) => {
+  button.addEventListener("click", async (event) => {
+    event.preventDefault();
+    const id = event.target.dataset.id;
+
+    await fetch(`http://localhost:4000/api/drinks/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify([{ op: "replace", path: "/ordered", value: true }]),
+    });
+    window.location.reload();
+  });
 });
