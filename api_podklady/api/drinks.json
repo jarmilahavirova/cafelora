@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Espresso",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#613916",
@@ -14,7 +14,7 @@
   {
     "id": 1,
     "name": "Doppio",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#613916",
@@ -26,7 +26,7 @@
   {
     "id": 2,
     "name": "Lungo",
-    "ordered": null,
+    "ordered": false,
     "layers": [
       {
         "color": "#b0dee1",
@@ -42,7 +42,7 @@
   {
     "id": 3,
     "name": "Ristretto",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#613916",
@@ -54,7 +54,7 @@
   {
     "id": 4,
     "name": "Macchiato",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#feeeca",
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "name": "Corretto",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#fa872f",
@@ -102,7 +102,7 @@
   {
     "id": 7,
     "name": "Romano",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#fbdf5b",
@@ -118,7 +118,7 @@
   {
     "id": 8,
     "name": "Cappuccino",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#feeeca",
@@ -138,7 +138,7 @@
   {
     "id": 9,
     "name": "Americano",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#b0dee1",
@@ -154,7 +154,7 @@
   {
     "id": 10,
     "name": "Café late",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#feeeca",
@@ -174,7 +174,7 @@
   {
     "id": 11,
     "name": "Flat white",
-    "ordered": true,
+    "ordered": false,
     "layers": [
       {
         "color": "#fed7b0",
