@@ -54,7 +54,7 @@
   {
     "id": 4,
     "name": "Macchiato",
-    "ordered": false,
+    "ordered": true,
     "layers": [
       {
         "color": "#feeeca",
