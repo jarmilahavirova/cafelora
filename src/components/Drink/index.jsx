@@ -18,7 +18,6 @@ export const Drink = ({ id, name, ordered, image, layers }) => (
       <input type="hidden" className="order-id" value="0" />
       <button
         className={ordered ? "order-btn order-btn--ordered" : "order-btn"}
-        data-id={id}
       >
         {ordered ? "Zrušit" : "Objednat"}
       </button>

@@ -1,6 +1,6 @@
 import "./Header.css";
 
-export const Header = ({ showMenu }) => (
+export const Header = ({ showMenu = true }) => (
   <header id="home">
     <div className="header__content container">
       <div className="site-logo"></div>
